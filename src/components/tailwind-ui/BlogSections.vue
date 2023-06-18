@@ -6,10 +6,10 @@
         <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
       </div>
       <div class="max-w-xl">
-        <div class="mt-8 flex items-center gap-x-4 text-xs">
+        <!-- <div class="mt-8 flex items-center gap-x-4 text-xs">
           <time :publishDate="post.publishDate" class="">{{ post.publishDate }}</time>
           <p class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium hover:bg-gray-100">{{ post.tags[0] }}</p>
-        </div>
+        </div> -->
         <div class="group relative">
           <h3 class="mt-3 text-lg font-semibold leading-6 group-hover:">
             <a :href="`./work/${slug}`">
