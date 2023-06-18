@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import BlogSections from "../../../components/tailwind-ui/BlogSections.vue";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Hero from "../../../components/Hero.astro";
+import Pill from "../../../components/Pill.astro";
+import Icon from "../../../components/Icon.astro";
+import StoreFrontCollections from "../../../components/tailwind-ui/StoreFrontCollections.vue";
+
+export async function getStaticPaths() {
+  // const allPosts = await Astro.glob("../posts/*.md");
+  const allPosts = await getCollection("work");
+  const tags: Array<string> = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
+  return tags.map((tag: string) => {
+    return { params: { tag }, props: { posts: allPosts.filter((post) => post.data.tags.includes(tag)), tags } };
+  });
+}
+
+const { tag }: { tag: string } = Astro.params;
+const { posts, tags }: { posts: Array } = Astro.props;
+---
+
+<BaseLayout title={tag + " Projects"} description={tag + " Projects"}>
+  <div class="stack gap-20">
+    <div class="stack gap-15">
+      <header>
+        <div class="wrapper stack gap-2">
+          <a class="back-link" href="./work/"><Icon icon="arrow-left" /> Work</a>
+          <Hero title={tag} tagline={`Projects tagged "${tag}"`} align="start" />
+        </div>
+      </header>
+      <main class="wrapper stack">
+        <div class="stack gap-10 content">
+          <StoreFrontCollections collections={posts} />
+          <div>
+            Other Tags to Explore:
+            <div class="tags flex gap-2">
+              {
+                tags.map((t) => (
+                  <a href={`./work/tags/${t}`}>
+                    <Pill>{t}</Pill>
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</BaseLayout>
