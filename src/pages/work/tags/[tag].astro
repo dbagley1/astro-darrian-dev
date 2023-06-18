@@ -10,10 +10,10 @@ import StoreFrontCollections from "../../../components/tailwind-ui/StoreFrontCol
 export async function getStaticPaths() {
   // const allPosts = await Astro.glob("../posts/*.md");
   const allPosts = await getCollection("work");
-  const tags: Array<string> = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+  const tags: Array<string> = [...new Set(allPosts.map((post) => post.data.tags).flat())].filter(Boolean);
 
   return tags.map((tag: string) => {
-    return { params: { tag }, props: { posts: allPosts.filter((post) => post.data.tags.includes(tag)), tags } };
+    return { params: { tag }, props: { posts: allPosts.filter((post) => post.data.tags?.includes(tag)), tags } };
   });
 }
 
