@@ -1,9 +1,9 @@
 ---
-title: "A Numbers Game"
-description: "These front page infographics visualized the trend in student enrollment decreasing at Harding University."
-img: "./assets/Bison/HB0921A01C.png"
-img_alt: "Cover of the Bison Newspaper. Large title reads 'A Numbers Game' above a graph displaying declining student enrollment rates."
-publishDate: "09-21-19"
+title: A Numbers Game
+description: These front page infographics visualized the trend in student enrollment decreasing at Harding University.
+img: ./assets/Bison/HB0921A01C.png
+img_alt: Cover of the Bison Newspaper. Large title reads 'A Numbers Game' above a graph displaying declining student enrollment rates.
+publishDate: 09-21-19
 tags:
 - Design
 - The Bison

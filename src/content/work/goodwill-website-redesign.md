@@ -1,12 +1,12 @@
 ---
-title: "Goodwill Website Redesign"
-description: "I redesigned the website for Goodwill Industries of Arkansas using HTMl, CSS, JavaScript, and WordPress."
-publishDate: "06-11-2017"
-img: "./assets/Goodwill/Redesign (crop).png"
-img_alt: "Redesigned Goodwill website homepage"
+title: Goodwill Website Redesign
+description: I redesigned the website for Goodwill Industries of Arkansas using HTMl, CSS, JavaScript, and WordPress.
+publishDate: 06-11-2017
+img: ./assets/Goodwill/Redesign (crop).png
+img_alt: Redesigned Goodwill website homepage
 tags:
-- "Web Development"
-- "Goodwill"
+- Web Development
+- Goodwill
 ---
 
 # Goodwill Website Redesign
