@@ -8,5 +8,5 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: "https://dbagley1.github.io",
   base: '/astro-darrian-dev',
-  integrations: [tailwind(), vue(), mdx()]
+  integrations: [tailwind(), vue({ jsx: true }), mdx()]
 });
