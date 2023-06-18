@@ -37,7 +37,7 @@ const { Content } = await entry.render();
 						<div class="details">
 							<div class="tags">
 								{
-									entry.data.tags.map((t) => (
+									entry.data.tags?.map((t) => (
 										<a href={`./work/tags/${t}`}>
 											<Pill>{t}</Pill>
 										</a>
