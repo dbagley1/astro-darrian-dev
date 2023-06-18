@@ -4,7 +4,7 @@ description: Special edition of The Bison dedicated to raising awareness for add
 publishDate: 03-01-2019
 tags:
   - The Bison
-  - Graphic Design
+  - Design
 img: /assets/Bison/HB03012019A01C.png
 img_alt: Front page of the "Removing the Mask" special edition of The Bison Newspaper.
 ---
