@@ -11,10 +11,10 @@ const textLinks: { label: string; href: string }[] = [
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
-	// { label: "Twitter", href: "https://twitter.com/me", icon: "twitter-logo" },
-	// { label: "Twitch", href: "https://twitch.tv/me", icon: "twitch-logo" },
 	{ label: "GitHub", href: "https://github.com/dbagley1", icon: "github-logo" },
 	{ label: "GitHub", href: "https://linkedin.com/in/darrianb", icon: "linkedin-logo" },
+	// { label: "Twitter", href: "https://twitter.com/me", icon: "twitter-logo" },
+	// { label: "Twitch", href: "https://twitch.tv/me", icon: "twitch-logo" },
 	// { label: "CodePen", href: "https://codepen.io/me", icon: "codepen-logo" },
 	// { label: "dribbble", href: "https://dribbble.com/me", icon: "dribbble-logo" },
 	// { label: "YouTube", href: "https://www.youtube.com/@me/", icon: "youtube-logo" },
@@ -115,8 +115,8 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 	nav {
 		z-index: 9999;
 		position: relative;
-		font-family: var(--font-brand);
-		font-weight: 500;
+		font-family: var(--font-body);
+		font-weight: 400;
 		margin-bottom: 3.5rem;
 	}
 
@@ -177,12 +177,12 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		font-size: var(--text-md);
+		font-size: var(--text-lg);
 		line-height: 1.2;
 		list-style: none;
-		padding: 2rem;
-		background-color: var(--gray-999);
-		border-bottom: 1px solid var(--gray-800);
+		/* padding: 2rem; */
+		/* background-color: var(--gray-999); */
+		/* border-bottom: 1px solid var(--gray-800); */
 	}
 
 	.link {
@@ -258,19 +258,19 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 		.nav-items {
 			position: relative;
 			flex-direction: row;
-			font-size: var(--text-sm);
+			font-size: var(--text-lg);
 			border-radius: 999rem;
 			border: 0;
 			padding: 0.5rem 0.5625rem;
-			background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-			box-shadow: var(--shadow-md);
+			/* background: radial-gradient(var(--gray-900), var(--gray-800) 150%); */
+			/* box-shadow: var(--shadow-md); */
 		}
 
 		.nav-items::before {
 			position: absolute;
 			inset: -1px;
 			content: "";
-			background: var(--gradient-stroke);
+			/* background: var(--gradient-stroke); */
 			border-radius: 999rem;
 			z-index: -1;
 		}
