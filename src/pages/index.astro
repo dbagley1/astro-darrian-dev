@@ -16,8 +16,17 @@ import PortfolioPreview from "../components/PortfolioPreview.astro";
 import ContactCTA from "../components/ContactCTA.astro";
 import Skills from "../components/Skills.astro";
 
+import BlogSections from "../components/tailwind-ui/BlogSections.vue";
+import StoreFrontCollections from "../components/tailwind-ui/StoreFrontCollections.vue";
+
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection("work")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()).slice(0, 4);
+const webDevProjects = (await getCollection("work"))
+	.filter((work) => {
+		console.log(work.data.tags);
+		return work.data.tags.includes("Web Development");
+	})
+	.slice(0, 4);
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -39,6 +48,26 @@ const projects = (await getCollection("work")).sort((a, b) => b.data.publishDate
 			</header>
 
 			<Skills />
+		</div>
+
+		<div class="py-24 sm:py-32">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center">
+					<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Web Development Projects</h2>
+					<p class="mt-2 text-lg leading-8">Learn how to grow your business with our expert advice.</p>
+				</div>
+				<BlogSections posts={webDevProjects} />
+			</div>
+		</div>
+
+		<div class="py-24 sm:py-32">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center">
+					<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Web Development Projects</h2>
+					<p class="mt-2 text-lg leading-8">Learn how to grow your business with our expert advice.</p>
+				</div>
+				<StoreFrontCollections collections={webDevProjects} />
+			</div>
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
