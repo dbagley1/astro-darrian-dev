@@ -220,12 +220,14 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 		padding: var(--icon-padding);
 		text-decoration: none;
 		color: var(--accent-dark);
-		transition: color var(--theme-transition);
+		transition: all var(--theme-transition);
 	}
 
 	.social:hover,
 	.social:focus {
-		color: var(--accent-text-over);
+		color: var(--accent-dark);
+		filter: brightness(5);
+		transform: translateY(-3px);
 	}
 
 	.theme-toggle {
