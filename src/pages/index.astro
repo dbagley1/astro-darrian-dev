@@ -43,7 +43,6 @@ const webDevProjects = (await getCollection("work"))
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
 						<Pill><Icon icon="microphone-stage" size="1.33em" /> Designer</Pill>
-						<Pill><Icon icon="bezier-curve" size="1.33em" /> Photographer</Pill>
 					</div>
 				</Hero>
 
@@ -52,8 +51,6 @@ const webDevProjects = (await getCollection("work"))
 
 			<Skills />
 		</div>
-
-		<FeaturedBisonSection />
 
 		<div class="py-24 sm:py-32">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -64,6 +61,8 @@ const webDevProjects = (await getCollection("work"))
 				<BlogSections posts={webDevProjects} />
 			</div>
 		</div>
+
+		<FeaturedBisonSection />
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
