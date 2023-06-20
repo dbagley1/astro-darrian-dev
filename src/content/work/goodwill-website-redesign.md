@@ -28,11 +28,7 @@ Detailed Explanation of Changes Below Images
 **Problem**: The links in the navigation bar didn't reflect what most visitors to the site were seeking.
 **Solution**: I implemented link click tracking using Google Tag Manager in Google Analytics and I used Google Search Console to determine what queries drove traffic to our site. The data showed that most visitors were searching for a nearby Goodwill location. Based on this, I made an independent "Locations" page and added it to the front of the navigation bar. It became the most clicked link on the page.
 
-## Homepage Before Redesign
-
-![Homepage before redesign. Images are improperly sized. Page is chaotic and poorly organized with a lot of different colors and font sizes.](<../../public/assets/Goodwill/Old (Full).png>)
-
-## Homepage After Redesign
+## New Homepage
 
 ![Homepage after redesign. An animation of an anthropomorphic box walking through goodwill stores plays at the top of the page. The content is better organized and the design of the page is cleaner.](<../../public/assets/Goodwill/Redesign (crop).png>)
 
