@@ -7,6 +7,6 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://dbagley1.github.io",
-  base: '/astro-darrian-dev',
+  base: 'https://static.darrian.dev',
   integrations: [tailwind(), vue({ jsx: true }), mdx()]
 });
