@@ -9,7 +9,7 @@ interface Props {
 const { title = "Darrian Bagley: Personal Site", description = "The personal site of Darrian Bagley" } = Astro.props;
 ---
 
-<base href=`${Astro.url.origin + import.meta.env.BASE_URL}` />
+<base href=`${import.meta.env.STATIC_BASE}` />
 <meta charset="UTF-8" />
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
