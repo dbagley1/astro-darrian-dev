@@ -24,8 +24,8 @@ jobs:
         uses: withastro/action@v0
         env:
           # Setting an environment variable with the value of a configuration variable
-          STATIC_BASE: https://static.darrian.dev
-          # STATIC_BASE: ${{ vars.STATIC_BASE }}
+          # STATIC_BASE: https://static.darrian.dev
+          STATIC_BASE: ${{ vars.STATIC_BASE }}
         # with:
         # path: . # The root location of your Astro project inside the repository. (optional)
         # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
