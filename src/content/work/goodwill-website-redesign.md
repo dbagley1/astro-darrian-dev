@@ -2,7 +2,7 @@
 title: Goodwill Website Redesign
 description: I redesigned the website for Goodwill Industries of Arkansas using HTMl, CSS, JavaScript, and WordPress.
 publishDate: 06-11-2017
-img: ./assets/Goodwill/Redesign (crop).png
+img: https://static.darrian.dev/assets/Goodwill/Redesign (crop).png
 img_alt: Redesigned Goodwill website homepage
 tags:
 - Web Development
@@ -30,11 +30,11 @@ Detailed Explanation of Changes Below Images
 
 ## New Homepage
 
-![Homepage after redesign. An animation of an anthropomorphic box walking through goodwill stores plays at the top of the page. The content is better organized and the design of the page is cleaner.](<../../public/assets/Goodwill/Redesign (crop).png>)
+![Homepage after redesign. An animation of an anthropomorphic box walking through goodwill stores plays at the top of the page. The content is better organized and the design of the page is cleaner.](<https://static.darrian.dev/assets/Goodwill/Redesign (crop).png>)
 
 ## Filterable Store Locator
 
-![Screenshot of the filterable store locator page. Store locations matching the search are listed in a grid.](<../../public/assets/Goodwill/Goodwill Locations Screenshot.png>)
+![Screenshot of the filterable store locator page. Store locations matching the search are listed in a grid.](<https://static.darrian.dev/assets/Goodwill/Goodwill Locations Screenshot.png>)
 
 I used HTML, CSS, and Javascript to create a filterable store locator module for the website. The list can be filtered by type of location and searched by city name.​
 

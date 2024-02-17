@@ -5,7 +5,7 @@ publishDate: 03-01-2019
 tags:
   - Web Development
   - Graphic Design
-img: ./assets/SRPA/www-spinalcord-com-infographics-thumb.png
+img: https://static.darrian.dev/assets/SRPA/www-spinalcord-com-infographics-thumb.png
 img_alt: Front page of the "Removing the Mask" special edition of The Bison Newspaper.
 ---
 
